@@ -1,8 +1,5 @@
 package Model;
 
-
-import java.io.*;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -11,11 +8,7 @@ import java.util.HashSet;
 public class Inventory {
     private static Inventory instance;
     private HashMap<String, Stock> stockOrder = new HashMap<>();
-    private ArrayList<Order> productOrder = new ArrayList<>();
     private HashSet<String> creditCards = new HashSet<>();
-
-
-
 
 
     public static Inventory getInstance() {
@@ -30,13 +23,8 @@ public class Inventory {
         return stockOrder;
     }
 
-
     public HashSet<String> getCreditCards() {
         return creditCards;
-    }
-
-    public ArrayList<Order> getProductOrder() {
-        return productOrder;
     }
 
 

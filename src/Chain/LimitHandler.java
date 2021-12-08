@@ -16,7 +16,7 @@ public class LimitHandler implements Handler {
         int luxury = 5;
         int misc = 6;
         for (Order listOfStocks : checkOrders) {
-            if ( ((inStock.getStockOrder().get(listOfStocks.getItemName()).getCategory()).equalsIgnoreCase("Essential") &&
+            if (((inStock.getStockOrder().get(listOfStocks.getItemName()).getCategory()).equalsIgnoreCase("Essential") &&
                     essential < listOfStocks.getQuantity())
                     || ((inStock.getStockOrder().get(listOfStocks.getItemName()).getCategory()).equalsIgnoreCase("Luxury") &&
                     luxury < listOfStocks.getQuantity())

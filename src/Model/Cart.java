@@ -15,8 +15,8 @@ public class Cart {
     private Inventory inStock = Inventory.getInstance();
 
     //Chain
-    StockHandler checkStock = new StockHandler();
-    LimitHandler checkLimit = new LimitHandler();
+    private StockHandler checkStock = new StockHandler();
+    private LimitHandler checkLimit = new LimitHandler();
 
 
     //read from inputfile

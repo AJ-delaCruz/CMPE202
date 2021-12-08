@@ -18,7 +18,7 @@ public class Main {
 
         Cart newCart = new Cart();
         //add files
-        newCart.getInput(input2);
+        newCart.getInput(input3);
 
         newCart.getData(dataSet);
         newCart.getCardFile(cards);

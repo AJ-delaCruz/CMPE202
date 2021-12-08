@@ -22,10 +22,10 @@ public class StockHandler implements Handler {
             if (inStock.getStockOrder().get(listStock.getItemName()).getQuantity() < listStock.getQuantity()) {
                 try {
                     FileWriter myWriter = new FileWriter("errors.txt");
-                    myWriter.write("Please correct quantities"+ "\n" + listStock.getItemName() + ", " +listStock.getQuantity());
+                    myWriter.write("Please correct quantities" + "\n" + listStock.getItemName() + ", " + listStock.getQuantity());
 
                     myWriter.close();
-                    System.out.println("Please correct quantities"+ "\n" + listStock.getItemName() + ", " +listStock.getQuantity());
+                    System.out.println("Please correct quantities" + "\n" + listStock.getItemName() + ", " + listStock.getQuantity());
                 } catch (IOException e) {
                     System.out.println("Error");
                     e.printStackTrace();
